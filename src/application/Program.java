@@ -12,6 +12,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		
 		System.out.println("mudando");
+		System.out.println("nova mudanca");
 		
 		String name,email;
 		double salary;
