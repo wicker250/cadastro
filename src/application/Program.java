@@ -11,27 +11,23 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 		
-		System.out.println("mudando");
-		System.out.println("nova mudanca");
-		
 		String name,email;
 		double salary;
 		double percentage;
 		
-		System.out.println("digite o nome");
+		System.out.print("digite o nome: ");
 		name = sc.nextLine();
 		
-		System.out.println("digite o salario");
+		System.out.print("digite o salario: ");
 		salary = sc.nextDouble();
 		sc.nextLine();
 		
-		System.out.println("digite o email");
+		System.out.print("digite o email: ");
 		email = sc.nextLine();
 		
 		Cadastro cadastro = new Cadastro(name,email,salary);
 		
-	   System.out.println(cadastro.getEmail());
-	   System.out.println();
+	   System.out.println("o email atual eh: "+cadastro.getEmail());
 	   System.out.print("mudando email: ");
 	   email=sc.nextLine();
 	
@@ -42,7 +38,7 @@ public class Program {
 	   
 	   cadastro.Aumento(percentage);
 	   
-	   System.out.println(cadastro.getSalary());
+	   System.out.println("salario atualizado: "+cadastro.getSalary());
 	   
 	   sc.close();
 		
